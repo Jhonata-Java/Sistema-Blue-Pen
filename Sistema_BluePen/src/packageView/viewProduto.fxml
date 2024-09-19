@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="510.0" prefWidth="835.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="packageController.controllerProduto">
+   <children>
+      <ImageView fitHeight="498.0" fitWidth="191.0" layoutX="-4.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../packageMidia/Frame%20102.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tableProduto" layoutX="166.0" layoutY="148.0" prefHeight="388.0" prefWidth="664.0" style="-fx-border-color: #000000;">
+        <columns>
+          <TableColumn fx:id="columnID" prefWidth="34.4000244140625" text="id" />
+          <TableColumn fx:id="columnNome" prefWidth="108.0" text="Nome" />
+            <TableColumn fx:id="columnCodigo" prefWidth="75.99993896484375" text="Codigo" />
+            <TableColumn fx:id="columnEstoque" prefWidth="72.0" text="Estoque" />
+            <TableColumn fx:id="columnPrecoUN" prefWidth="96.00003051757812" text="Preço Unitario" />
+            <TableColumn fx:id="columnTipoUN" prefWidth="98.39996337890625" text="TipoUnitario" />
+            <TableColumn fx:id="columnFabricacao" prefWidth="83.199951171875" text="Fabricação" />
+            <TableColumn fx:id="columnValidade" prefWidth="96.800048828125" text="Validade" />
+        </columns>
+      </TableView>
+      <Text fontSmoothingType="LCD" layoutX="169.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PRODUTOS" wrappingWidth="143.1098175048828">
+         <font>
+            <Font name="Footlight MT Light" size="23.0" />
+         </font>
+      </Text>
+      <Line endX="6.20001220703125" endY="-7.0000152587890625" layoutX="274.0" layoutY="78.0" startX="-105.00001525878906" startY="-7.0" />
+      <TextField fx:id="textPesquisarProduto" layoutX="172.0" layoutY="81.0" prefHeight="27.0" prefWidth="204.0" promptText="Ex: Jhonata" style="-fx-border-color: #ffffffff; -fx-border-radius: 9; -fx-background-insets: 9999;" />
+      <Button fx:id="btnPesquisarProduto" alignment="TOP_LEFT" layoutX="381.0" layoutY="81.0" mnemonicParsing="false" onAction="#ActionBtnPesquisarProduto" prefHeight="26.0" prefWidth="83.0" style="-fx-background-radius: 10; -fx-border-color: #000000; -fx-border-radius: 10;" text="Pesquisar" />
+      <Button fx:id="btnMenuPrincipalProduto" layoutX="8.0" layoutY="86.0" mnemonicParsing="false" onAction="#btButtonTeste" style="-fx-border-color: #ffffffff; -fx-border-radius: 10; -fx-background-insets: 999;" text="MENU PRINCIPAL" textFill="WHITE">
+         <font>
+            <Font name="Footlight MT Light" size="15.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="14.0" fitWidth="14.0" layoutX="444.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../packageMidia/icons8-pesquisar-50.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="44.0" layoutX="-1.0" layoutY="-5.0" stroke="BLACK" strokeType="INSIDE" width="834.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.003921568859368563" green="0.34117648005485535" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Text fill="WHITE" layoutX="-83.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BLUE PEN DISTRIBUIDORA" textAlignment="CENTER" wrappingWidth="509.83905029296875">
+         <font>
+            <Font name="Footlight MT Light" size="29.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnCadastroProduto" alignment="TOP_LEFT" layoutX="491.0" layoutY="81.0" mnemonicParsing="false" onAction="#ActionBtnCadastraProduto" prefHeight="26.0" prefWidth="92.0" style="-fx-border-color: #000000; -fx-background-radius: 10; -fx-border-radius: 10;" text="CADASTRA">
+         <font>
+            <Font name="Footlight MT Light" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnEditarProduto" alignment="TOP_LEFT" layoutX="611.0" layoutY="81.0" mnemonicParsing="false" onAction="#ActionBtnEditarProduto" prefHeight="26.0" prefWidth="76.0" style="-fx-border-color: #000000; -fx-border-radius: 10; -fx-background-radius: 10;" text="EDITAR" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="Footlight MT Light" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnDeletarProduto" alignment="TOP_LEFT" layoutX="728.0" layoutY="82.0" mnemonicParsing="false" onAction="#ActionBtnDeletarProduto" prefHeight="26.0" prefWidth="76.0" style="-fx-border-color: #000000; -fx-background-radius: 10; -fx-border-radius: 10;" text="DELETAR" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="Footlight MT Light" size="13.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="14.0" fitWidth="14.0" layoutX="565.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../packageMidia/Vector%20(2).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="21.0" fitWidth="11.0" layoutX="667.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../packageMidia/Vector%20(3).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="14.0" fitWidth="14.0" layoutX="787.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../packageMidia/solar_trash-bin-minimalistic-outline.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnRegistraVendaProduto" alignment="TOP_RIGHT" layoutX="26.0" layoutY="175.0" mnemonicParsing="false" onAction="#ActionBtnRegistraVendaPro" prefHeight="26.0" prefWidth="124.0" style="-fx-background-insets: 9999;" text="REGISTRA VENDA" textFill="WHITE">
+         <font>
+            <Font name="Footlight MT Light" size="14.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="21.0" fitWidth="20.0" layoutX="12.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../packageMidia/Vector%20(9).png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnFornecedorProduto" alignment="TOP_RIGHT" layoutX="22.0" layoutY="219.0" mnemonicParsing="false" onAction="#btnTelaFornecedor" prefHeight="26.0" prefWidth="118.0" style="-fx-background-insets: 9999;" text="FORNECEDORES" textFill="WHITE">
+         <font>
+            <Font name="Footlight MT Light" size="14.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="18.0" fitWidth="20.0" layoutX="13.0" layoutY="220.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../packageMidia/Vector%20(10).png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnVendedorProduto" alignment="TOP_RIGHT" layoutX="4.0" layoutY="256.0" mnemonicParsing="false" onAction="#btnTelaVenda" prefHeight="26.0" prefWidth="124.0" style="-fx-background-insets: 9999;" text="VENDEDORES" textFill="WHITE">
+         <font>
+            <Font name="Footlight MT Light" size="14.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="18.0" fitWidth="20.0" layoutX="14.0" layoutY="258.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../packageMidia/Vector%20(11).png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnClienteProduto" alignment="TOP_RIGHT" layoutX="11.0" layoutY="290.0" mnemonicParsing="false" onAction="#btnTelaCliente" prefHeight="26.0" prefWidth="92.0" style="-fx-background-insets: 9999;" text="CLIENTES" textFill="WHITE">
+         <font>
+            <Font name="Footlight MT Light" size="14.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="21.0" fitWidth="18.0" layoutX="15.0" layoutY="292.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../packageMidia/Vector%20(12).png" />
+         </image>
+      </ImageView>
+      <Button alignment="TOP_RIGHT" layoutX="4.0" layoutY="329.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="113.0" style="-fx-background-insets: 999; -fx-border-color: #ffffffff; -fx-border-radius: 10;" text="PRODUTOS" textFill="WHITE">
+         <font>
+            <Font name="Footlight MT Light" size="14.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="21.0" fitWidth="26.0" layoutX="8.0" layoutY="330.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../packageMidia/Vector%20(13).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="67.0" fitWidth="89.0" layoutX="34.0" layoutY="426.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../packageMidia/Vector%20(1).png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="1.0" layoutY="510.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BLUE PEN DISTRIBUIDORA" textAlignment="CENTER" wrappingWidth="167.20000000000005">
+         <font>
+            <Font name="Footlight MT Light" size="18.0" />
+         </font>
+      </Text>
+      <Line endX="100.0" layoutX="274.0" layoutY="108.0" startX="-100.0" />
+   </children>
+</AnchorPane>

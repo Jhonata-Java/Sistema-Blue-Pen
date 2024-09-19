@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="500.0" prefWidth="750.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="packageController.controllerLogin">
+   <children>
+      <TextField fx:id="textSenha" layoutX="432.0" layoutY="237.0" prefHeight="26.0" prefWidth="234.0" style="-fx-background-color: #000000;" visible="false" />
+      <Button fx:id="btLogin" layoutX="496.0" layoutY="366.0" mnemonicParsing="false" onAction="#btButtonTeste" prefHeight="36.0" prefWidth="150.0" style="-fx-background-color: #3A62ED; -fx-background-radius: 20;" text="Login" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <TextField fx:id="textUser" layoutX="432.0" layoutY="169.0" prefHeight="26.0" prefWidth="242.0" promptText="Ex: ###.###.###-##" style="-fx-background-color: #000000; -fx-fill: #ffffff;" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="500.0" stroke="BLACK" strokeType="INSIDE" width="375.0">
+         <fill>
+            <LinearGradient endX="0.503787900462295" endY="0.7386363532507059" startX="0.5113636137861194" startY="0.10227275617194899">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.13333334028720856" green="0.16078431904315948" blue="0.7882353067398071" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.062745101749897" green="0.07450980693101883" blue="0.41960784792900085" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Text fill="WHITE" layoutX="427.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Usuário (CPF)" wrappingWidth="74.7418212890625" />
+      <Text fill="WHITE" layoutX="432.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Senha" />
+      <Text fill="WHITE" layoutX="461.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Olá! Faça seu Login!" textAlignment="CENTER" wrappingWidth="221.59991455078125">
+         <font>
+            <Font name="Cambria" size="24.0" />
+         </font>
+      </Text>
+      <Line endX="146.39996337890625" endY="-0.600006103515625" layoutX="528.0" layoutY="196.0" startX="-95.0" startY="0.399993896484375" stroke="WHITE" />
+      <Line endX="146.60003662109375" endY="0.399993896484375" layoutX="528.0" layoutY="264.0" startX="-95.0" startY="0.399993896484375" stroke="WHITE" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="91.0" layoutY="94.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../packageMidia/Vector%20(1).png" />
+         </image>
+      </ImageView>
+      <Text layoutX="73.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #ffffff;" text="BLUE PEN DISTRIBUIDORA" textAlignment="CENTER" wrappingWidth="251.1999877929686">
+         <font>
+            <Font name="Footlight MT Light" size="33.0" />
+         </font>
+      </Text>
+      <ToggleButton fx:id="VerSenha" layoutX="675.0" layoutY="234.0" mnemonicParsing="false" onAction="#visualizaSenha" prefHeight="17.0" prefWidth="26.0" style="-fx-background-color: #000000;">
+         <graphic>
+            <ImageView fitHeight="26.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../packageMidia/icons8-olho-30%20(1).png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </ToggleButton>
+      <PasswordField fx:id="textPassword" layoutX="433.0" layoutY="238.0" prefHeight="26.0" prefWidth="241.0" promptText="Ex: 12345" style="-fx-background-color: #000000;" />
+   </children>
+</AnchorPane>

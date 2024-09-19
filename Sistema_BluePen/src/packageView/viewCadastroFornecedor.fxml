@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="543.0" prefWidth="754.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="packageController.controllerCadastroFornecedor">
+   <children>
+      <ImageView fitHeight="502.0" fitWidth="167.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../packageMidia/Frame%20102.png" />
+         </image>
+      </ImageView>
+      <Text fontSmoothingType="LCD" layoutX="171.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CADASTRA FORNECEDOR" wrappingWidth="249.5098419189453">
+         <font>
+            <Font name="Footlight MT Light" size="23.0" />
+         </font>
+      </Text>
+      <Line endX="146.50982666015625" endY="-9.0" layoutX="274.0" layoutY="78.0" startX="-101.00001525878906" startY="-7.000007629394531" />
+      <TextField fx:id="textNomeCadastroFornecedor" layoutX="180.0" layoutY="126.0" prefHeight="27.0" prefWidth="314.0" promptText="Ex: Jhonata Junior" style="-fx-border-color: #000000; -fx-border-radius: 9; -fx-background-insets: 9999;" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="44.0" layoutX="-1.0" layoutY="-5.0" stroke="BLACK" strokeType="INSIDE" width="759.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.003921568859368563" green="0.34117648005485535" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Text fill="WHITE" layoutX="-83.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BLUE PEN DISTRIBUIDORA" textAlignment="CENTER" wrappingWidth="509.83905029296875">
+         <font>
+            <Font name="Footlight MT Light" size="29.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnCadastroFornecedor" alignment="TOP_LEFT" layoutX="536.0" layoutY="492.0" mnemonicParsing="false" onAction="#ActionBtnSalvarCliente" prefHeight="26.0" prefWidth="90.0" style="-fx-border-color: #000000; -fx-background-radius: 10; -fx-border-radius: 5;" text="CADASTRA">
+         <font>
+            <Font name="Footlight MT Light" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnCancelarFornecedor" alignment="TOP_LEFT" layoutX="648.0" layoutY="492.0" mnemonicParsing="false" onAction="#ActionBtnCanacelarCliente" prefHeight="26.0" prefWidth="90.0" style="-fx-border-color: #000000; -fx-background-radius: 10; -fx-border-radius: 5;" text="CANCELAR" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="Footlight MT Light" size="13.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="14.0" fitWidth="14.0" layoutX="609.0" layoutY="498.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../packageMidia/Vector%20(2).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="14.0" fitWidth="14.0" layoutX="721.0" layoutY="499.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../packageMidia/solar_trash-bin-minimalistic-outline.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="180.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="textCNPJCadastraFornecedor" layoutX="549.0" layoutY="126.0" prefHeight="27.0" prefWidth="190.0" promptText="Ex: ###.###.###-##" style="-fx-border-color: #000000; -fx-background-insets: 9999; -fx-border-radius: 9;" />
+      <Text layoutX="550.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CNPJ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="textEmailCadastraFornecedor" layoutX="180.0" layoutY="231.0" prefHeight="27.0" prefWidth="314.0" promptText="Ex: email@gmail.com" style="-fx-border-color: #000000; -fx-background-insets: 9999; -fx-border-radius: 9;" />
+      <Text layoutX="180.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-mail">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="textTelefoneCadastraFornecedor" layoutX="180.0" layoutY="318.0" prefHeight="27.0" prefWidth="150.0" promptText="Ex: ## #####-####" style="-fx-border-color: #000000; -fx-background-insets: 9999; -fx-border-radius: 9;" />
+      <Text layoutX="180.0" layoutY="312.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telefone">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="textEnderecoCadastraFornecedor" layoutX="180.0" layoutY="417.0" prefHeight="27.0" prefWidth="399.0" promptText="Ex: Metrópolis, numero tal" style="-fx-border-color: #000000; -fx-background-insets: 9999; -fx-border-radius: 9;" />
+      <Text layoutX="179.0" layoutY="408.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Endereço">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="67.0" fitWidth="89.0" layoutX="36.0" layoutY="417.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../packageMidia/Vector%20(1).png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="-1.0" layoutY="501.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BLUE PEN DISTRIBUIDORA" textAlignment="CENTER" wrappingWidth="167.20000000000005">
+         <font>
+            <Font name="Footlight MT Light" size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
